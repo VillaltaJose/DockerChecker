@@ -1,0 +1,18 @@
+{
+  "name": "containers-checker",
+  "version": "1.0.0",
+  "description": "A up containers list checker for docker",
+  "main": "serc/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Jose Villalta",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "inquirer": "^8.2.0",
+    "ora": "^6.1.0"
+  }
+}
