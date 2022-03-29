@@ -1,18 +1,33 @@
 {
   "name": "containers-checker",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A up containers list checker for docker",
-  "main": "serc/app.js",
+  "main": "bin/app.js",
   "type": "module",
+  "bin": {
+    "containers-checker": "bin/app.js"
+  },
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node bin/app.js"
   },
   "author": "Jose Villalta",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
     "child_process": "^1.0.2",
+    "esm": "^3.2.25",
     "inquirer": "^8.2.0",
     "ora": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VillaltaJose/DockerChecker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VillaltaJose/DockerChecker/issues"
+  },
+  "homepage": "https://github.com/VillaltaJose/DockerChecker#readme",
+  "publishConfig": {
+    "@josevillalta:registry": "https://npm.pkg.github.com"
   }
 }
